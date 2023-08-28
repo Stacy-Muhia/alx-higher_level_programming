@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 
-ef safe_print_list_integers(my_list=[], x=0):
-    printed = 0
+def safe_print_list_integers(my_list=[], x=0):
 
-    for i in range(x):
+    element = 0
+    for y in range(x):
         try:
-            if type(my_list[i]) is int and printed != x:
-                print('{:d}'.format(my_list[i]), end='')
-                printed += 1
-        except TypeError:
-            continue
+            print("{:d}".format(my_list[y]), end="")
+            elements += 1
+        except (ValueError, TypeError):
+            pass
 
-    print()
-
-    return printed
+    print("")
+    return element
