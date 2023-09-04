@@ -70,8 +70,7 @@ class Rectangle:
          """
          print rectangle with a character
          """
-         if self.__width == 0 or self.__height == 0:
-             retutn ""
+
          rectangle_str = ""
 
          for x in range(self.__height):
