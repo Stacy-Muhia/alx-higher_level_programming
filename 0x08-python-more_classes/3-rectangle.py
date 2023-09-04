@@ -74,8 +74,10 @@ class Rectangle:
              retutn ""
          rectangle_str = ""
 
-         for _ in range(self.__height):
-             for _ in range(self.__width):
+         for x in range(self.__height):
+             for y in range(self.__width):
                  rectangle_str += "#"
-             rectangle_str += "\n"
-         return rectangle_str[:-1]
+             
+             if self.__width is not 0 and x < (self.__height - 1):
+                 rectangle_str += "\n"
+             return rectangle_str
