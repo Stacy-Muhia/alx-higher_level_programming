@@ -80,7 +80,7 @@ class Rectangle:
         rectangle_str = ""
         for x in range(self.__height):
             for y in range(self.__width):
-                rectangle_str += "#"
+                rectangle_str += str(self.print_symbol)
 
             rectangle_str += "\n"
         return rectangle_str[:-1]
