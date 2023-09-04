@@ -79,11 +79,10 @@ class Rectangle:
             for y in range(self.__width):
                 rectangle_str += "#"
 
-                rectangle_str += "\n"
+            rectangle_str += "\n"
         return rectangle_str[:-1]
-    def __repr__(self):
-        """
-        return a string representation of the rectangle
-        """
 
+    def __repr__(self):
+        """ return a string representation of the rectangle
+        """
         return "Rectangle({}, {})".format(self.__width, self.__height)
