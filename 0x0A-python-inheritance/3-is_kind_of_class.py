@@ -1,6 +1,5 @@
-#!usr/bin/python3
-"""
-    Checks for objects in severa;l instances
+#!/usr/bin/python3
+"""Checks for objects in severa;l instances
 """
 
 
