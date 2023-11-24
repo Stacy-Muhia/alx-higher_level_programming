@@ -3,7 +3,7 @@
 adds the State object Louisiana to a database
 """
 
-rom sys import argv
+from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
